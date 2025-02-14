@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="./index.html"><img src="./images/logo 1.png" alt="Rwanda Kitchen Logo"></a>
+            <a href="./index.html"><h1>RwandanKitchen</h1></a>
         </div>
         <nav class="nav">
             <a href="./index.html">Home</a>
@@ -92,3 +92,14 @@
     
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.nav');
+
+    menuIcon.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+    });
+</script>
